@@ -5,5 +5,6 @@ const _ = require('lodash');
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // your code here
+const sumOfEvens = _.chain(numbers).filter((number) => number % 2 === 0).sum().value();
 
 console.log(sumOfEvens); // Expected output: 20
